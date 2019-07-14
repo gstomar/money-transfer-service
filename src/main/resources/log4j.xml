@@ -4,7 +4,7 @@
 
     <appender class="org.apache.log4j.RollingFileAppender" name="FILE">
         <param name="File" value="logs/moneyapp.log"/>
-        <param name="Threshold" value="debug"/>
+        <param name="Threshold" value="info"/>
         <param name="Append" value="true"/>
         <param name="MaxFileSize" value="5MB"/>
         <layout class="org.apache.log4j.PatternLayout">
@@ -21,12 +21,12 @@
 
 
     <logger name="MONEY-TRANSFER-APP" additivity="false">
-        <level value="debug"/>
+        <level value="info"/>
         <appender-ref ref="CONSOLE"/>
     </logger>
 
     <root>
-        <level value="DEBUG"/>
+        <level value="INFO"/>
         <appender-ref ref="CONSOLE"/>
     </root>
 </log4j:configuration>
